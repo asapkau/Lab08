@@ -19,9 +19,9 @@ public class CustomList {
         cities.add(city);
     }
 
-//    public boolean hasCity(City city) {
-//        return cities.contains(city);
-//    }
+    public boolean hasCity(City city) {
+        return cities.contains(city);
+    }
 
 //    public void deleteCity(City city) {
 //        boolean removed = cities.remove(city);
