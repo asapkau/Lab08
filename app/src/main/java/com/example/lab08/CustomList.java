@@ -23,12 +23,12 @@ public class CustomList {
         return cities.contains(city);
     }
 
-//    public void deleteCity(City city) {
-//        boolean removed = cities.remove(city);
-//        if (!removed) {
-//            throw new IllegalArgumentException("City not found in the list");
-//        }
-//    }
+    public void deleteCity(City city) {
+        boolean removed = cities.remove(city);
+        if (!removed) {
+            throw new IllegalArgumentException("City not found in the list");
+        }
+    }
 
 //    public int countCities() {
 //        return cities.size();
