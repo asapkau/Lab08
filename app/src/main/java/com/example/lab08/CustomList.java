@@ -11,6 +11,11 @@ public class CustomList {
     }
 
     public void addCity(City city) {
+
+        if (cities.contains(city)) {
+            throw new IllegalArgumentException("City already exists in the list");
+        }
+
         cities.add(city);
     }
 
@@ -18,9 +23,15 @@ public class CustomList {
         return cities.contains(city);
     }
 
+    public void deleteCity(City city) {
+        boolean removed = cities.remove(city);
+        if (!removed) {
+            throw new IllegalArgumentException("City not found in the list");
+        }
+    }
 
-    
+    public int countCities() {
+        return cities.size();
+    }
 
-    // Will be implemented later using TDD (leave blank for now)
-    // public boolean hasCity(City city) { ... }
 }
